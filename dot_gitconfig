@@ -1,0 +1,7 @@
+[user]
+	name = Lars De Volder\n
+	email = 36573562+larsdevolder@users.noreply.github.com
+[core]
+	editor = nano
+[init]
+	defaultBranch = main
