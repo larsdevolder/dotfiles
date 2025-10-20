@@ -20,3 +20,8 @@
     url = "https://github.com/tmux-plugins/tpm.git"
     exact = true
     refreshPeriod = "168h"
+{{ $asdfVersion := "0.18.0" -}}
+[".asdf/asdf"]
+    type = "archive-file"
+    url = "https://github.com/asdf-vm/asdf/releases/download/v{{ $asdfVersion }}/asdf-v{{ $asdfVersion }}-{{ .chezmoi.os }}-{{ .chezmoi.arch }}.tar.gz"
+    path = "asdf"
