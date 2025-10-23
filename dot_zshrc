@@ -114,3 +114,8 @@ path+=(/home/larsdevolder/.asdf)
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Launch tmux session 'default' when starting shell, if tmux is installed and not already in tmux shell
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach-session -t default || tmux new-session -s default
+fi
+
